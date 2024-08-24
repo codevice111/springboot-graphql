@@ -1,0 +1,22 @@
+type Movie {
+    id: ID!
+    movieName: String!
+    ratings: Float
+    verdict: String
+    category: String
+}
+
+type Query {
+    getMovies: [Movie]
+}
+
+input MovieInput {
+    movieName: String!
+    ratings: Float
+    verdict: String
+    category: String
+}
+
+type Mutation {
+    addMovie(movie: MovieInput): Movie
+}

@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: spring-boot-graphql
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pgdb1
+    username: admin
+    password: admin@123
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+      show-sql: true
