@@ -1,13 +1,14 @@
+# Spring boot application configurations
 spring:
   application:
     name: spring-boot-graphql
-
+  # Database configurations
   datasource:
     url: jdbc:postgresql://localhost:5432/pgdb1
     username: admin
     password: admin@123
     driver-class-name: org.postgresql.Driver
-
+  # Hibernate jpa configurations
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
